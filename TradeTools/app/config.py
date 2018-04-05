@@ -1,0 +1,4 @@
+api_key = 'MKVSNYabF3o9n9dfzRmqwzNg9gPJMUcpWmz5ymNy8SZxEG589K4uYF6KTUUAdL2g'
+api_secret = '0sN4hFLJIxIjStit6FSsHBWaSHCT7wjOU9l4XStdGxW7K7LG1wczPvFaAjNXV4gY'
+
+recv_window = 6000000
