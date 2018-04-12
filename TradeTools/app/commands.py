@@ -1,31 +1,53 @@
-from enum import Enum
-
-class CommandsList(Enum):
-    connect = 1
-    start = 2
-    list = 3
-    clean = 4
-    stop = 5
-    disconnect = 6
-
 class Commands(object):
     def __init__(self):
-        self.commands = CommandsList()
+        from TradeTools import Trade
+        self.trade = Trade()
 
-    def connect(self):
-        print('connect')
+    def execute(self, action):
+        command = action[0]
+        if(len(action) > 1):
+            params = action[1]
+        else:
+            params = []
+        
+        if(command == 'connect'):
+            return self.connect(params)
+        
+        if(command == 'start'):
+            return self.start(params)
 
-    def start(self):
+        if(command == 'list'):
+            return self.list(params)
+
+        if(command == 'clean'):
+            return self.clean(params)
+
+        if(command == 'stop'):
+            return self.stop(params)
+
+        if(command == 'disconnect'):
+            return self.disconnect(params)
+
+    def connect(self, params):
+        self.trade.connect()
+
+    def start(self, params):
         print('start')
+        print(params)
 
-    def list(self):
+    def list(self, params):
         print('list')
+        print(params)
 
-    def clean(self):
+    def clean(self, params):
         print('clean')
+        print(params)
 
-    def stop(self):
+    def stop(self, params):
         print('stop')
+        print(params)
 
-    def disconnect(self):
+    def disconnect(self, params):
         print('disconnect')
+        print(params)
+

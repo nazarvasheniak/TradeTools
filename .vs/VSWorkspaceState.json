@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\TradeTools",
-    "\\TradeTools\\app"
+    "\\TradeTools\\app",
+    "\\TradeTools\\binance",
+    "\\TradeTools\\twisted",
+    "\\TradeTools\\twisted\\internet"
   ],
   "SelectedNode": "\\TradeTools\\TradeTools.py",
   "PreviewInSolutionExplorer": false
