@@ -1,4 +1,1 @@
-Start_datetime,command_id,command_full,prior_idx,cancel_idx,start_idx,Stop_datetime,STATUS
-2018-04-10_22.04.30,4,connect,,,,,PROCESS
-Start_datetime,command_id,command_full,prior_idx,cancel_idx,start_idx,Stop_datetime,STATUS
-2018-04-10_22.04.30,4,connect,,,,2018-04-10_22.31.12,COMPLETED
+2018-04-10_22.04.30,4,connect,,,,,PROCESSStart_datetime,command_id,command_full,prior_idx,cancel_idx,start_idx,Stop_datetime,STATUS2018-04-10_22.04.30,4,connect,,,,2018-04-10_22.31.12,COMPLETED

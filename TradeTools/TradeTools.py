@@ -63,7 +63,9 @@ class Trade(object):
         with open(prevfile, 'r') as prevoutput:
             reader = csv.DictReader(prevoutput)
             for row in reader:
-                curcommand = str(int(row['command_id']) + 1)
+                prevcommand = int(row['command_id'])
+                prevcommand = prevcommand +1
+                curcommand = str(prevcommand)
 
         return curcommand
 
