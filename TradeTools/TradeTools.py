@@ -73,7 +73,7 @@ class Trade(object):
         with open('Output_' + time + '.csv', 'a') as output:
             fieldnames = ['Start_datetime', 'command_id', 'command_full', 'prior_idx', 'cancel_idx', 'start_idx', 'Stop_datetime', 'STATUS']
             writer = csv.DictWriter(output, fieldnames=fieldnames)
-            writer.writeheader()
+            #writer.writeheader()
             writer.writerow({'Start_datetime': time, 'command_id': command_id, 'command_full': 'connect', 'prior_idx': '', 'cancel_idx': '', 'start_idx': '', 'Stop_datetime': '', 'STATUS': 'PROCESS'})
 
         with open('Output_log.csv', 'a') as outputlog:
@@ -86,7 +86,7 @@ class Trade(object):
         with open('Output_' + time + '.csv', 'a') as output:
             fieldnames = ['Start_datetime', 'command_id', 'command_full', 'prior_idx', 'cancel_idx', 'start_idx', 'Stop_datetime', 'STATUS']
             writer = csv.DictWriter(output, fieldnames=fieldnames)
-            writer.writeheader()
+            #writer.writeheader()
             writer.writerow({'Start_datetime': time, 'command_id': command_id, 'command_full': 'connect', 'prior_idx': '', 'cancel_idx': '', 'start_idx': '', 'Stop_datetime': datetime.now().strftime("%Y-%m-%d_%H.%M.%S"), 'STATUS': 'COMPLETED'})
 
     def connect(self):
