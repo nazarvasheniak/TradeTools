@@ -42,7 +42,7 @@ psycopg2==2.7.4
 pyasn1==0.4.2
 pyasn1-modules==0.2.1
 pycparser==2.18
-Pygments==2.2.0
+Pygments==2.7.4
 pylint==1.8.3
 pyOpenSSL==17.5.0
 pytg==0.4.10
