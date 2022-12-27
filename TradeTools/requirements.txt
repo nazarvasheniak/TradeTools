@@ -54,7 +54,7 @@ pyzmq==17.0.0
 regex==2018.2.21
 requests==2.18.4
 service-identity==17.0.0
-setuptools==39.0.1
+setuptools==65.5.1
 simplegeneric==0.8.1
 simplejson==3.13.2
 six==1.11.0
